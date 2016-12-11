@@ -32,9 +32,9 @@
         // PeerJS object
         $("#create-peer").click(function() {
             console.log($("#your-id").val());
-            peer = new Peer("" + $("#your-id").val(), 　{host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3,  
-                config: {'iceServers': [{ 'urls': 'stun:stun.l.google.com:19302' }] }
-        });})
+            peer = new Peer("" + $("#your-id").val(), 　{ host:'peerjs-server.herokuapp.com', secure:true, port:443, key: 'peerjs', debug: 3,  
+                config: {'iceServers': [{ 'urls': 'stun:stun.l.google.com:19302' }] }});
+        })
 
             peer.on('open', function(){
                 $('#my-id').text(peer.id);
