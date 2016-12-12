@@ -77,7 +77,7 @@
                  onConnectSetup(connection);
 
                 horaSaida = performance.now();
-                 connection.send(cadeia2a20);
+                 connection.send(cadeia1024);
                 
             })
            
@@ -138,6 +138,7 @@
                 console.log('tempo médio estimado', sum/(count));
                 sum = 0;
                 tempos = [];
+                count =0;
             }
         })
 
